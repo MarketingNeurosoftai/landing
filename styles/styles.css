@@ -15,17 +15,7 @@ body {
     color:#B9A100;
 }
 
-.navbar ul{
-    padding-inline-start: 80px;
-}
-
-.navbar li{
-    padding-inline-start: 20px;
-    font-size: 14px;
-}
-
 .btn-outline-secondary {
-    margin-left: 20px;
     --bs-btn-font-weight: 700;
     --bs-btn-color:#B9A100;
     --bs-btn-border-color:#B9A100;
@@ -43,4 +33,39 @@ body {
 
 .btn-sm {
     --bs-btn-padding-x: 1rem;
+}
+
+.navbar-toggler{
+    --bs-navbar-toggler-border-color:#B9A100;
+}
+
+.navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(185, 161, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar ul{
+    padding-inline-start: 80px;
+}
+
+.navbar li{
+    padding-inline-start: 20px;
+    font-size: 14px;
+}
+
+.btn-outline-secondary {
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar ul{
+        padding-inline-start: 0px;
+    }
+    
+    .navbar li{
+        padding-inline-start: 0px;
+        font-size: 14px;
+    }   
 }
