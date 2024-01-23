@@ -3,6 +3,43 @@ body {
     background:#1A1A1A;
 }
 
+h1{
+    color: #FFFFFF;
+    margin-top: 100px;
+}
+
+h6{
+    color: #D3D3D3;
+    font-weight: 400;
+}
+
+h4{
+    color: #EED21B;
+    font-weight: 400;
+}
+
+p{
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+.legal {
+    background-color: #292929;
+    border-radius: 10px;
+    margin: 20px 30px;
+}
+
+.privacy-section {
+    background-image: url(../img/privacy_policy.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom:50px;
+    padding-top: 70px;
+}
+
+
+
 /* Estilos para la barra de navegación */
 .navbar {
     background-color:#1A1A1A !important;
@@ -102,7 +139,17 @@ body {
   .circle-background:hover {
     background-color: rgb(54, 54, 54); /* Cambia el color de fondo del círculo según tus necesidades */
   }
-  
+
+
+  .detail {
+    border: #717171 1px solid;
+    border-radius: 5px;
+    width: 300px;
+    padding: 5px 0px 5px 0px;
+    margin: auto;
+    background-color: #292929;
+  }
+
 
 
 
