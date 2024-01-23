@@ -57,6 +57,22 @@ body {
     margin-left: 20px;
 }
 
+.text-body-secondary{
+    color: rgb(135, 135, 135) !important;
+}
+
+.footer{
+    background-color:#1A1A1A !important;
+    border-top: rgba(255, 255, 255, 0.141) 2px solid;
+}
+
+.footer li{
+    font-size: 14px;
+}
+
+.footer button{
+    font-size: 14px;
+}
 
 
 @media (max-width: 992px) {
