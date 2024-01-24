@@ -18,6 +18,12 @@ h4{
     font-weight: 400;
 }
 
+h7{
+    color: #EED21B;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
 p{
     color: #FFFFFF;
     font-weight: 300;
@@ -164,6 +170,7 @@ p{
         color: #282828;
     }
 
+    /* Estilo para la primera seccion */
     .gold{
         background: linear-gradient(45deg, #B9A101, #B9A100); /* Cambia los colores según tus preferencias */
         -webkit-background-clip: text;
@@ -211,11 +218,93 @@ p{
         padding-top: 30px;
     }
 
+    /* Estilo para la seccion de servicios */
 
-    @media (max-width: 1440px) { 
+    .carousel-container {
+        display: flex;
+        width: 150%; /* Ancho total de todos los slides */
+        animation: slide 30s infinite linear; /* Ajusta la duración según tus necesidades */
+        margin-top: 20px;
+      }
+      
+      .carousel-slide {
+        flex: 1;
+        margin-right: 30px;
+      }
+      
+      .img-carousel {
+        width: 100%;
+        height: auto;
+        
+      }
+      
+      @keyframes slide {
+        0%, 100% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(-30%);
+        }
+      }
+
+
+
+
+    @media (max-width: 1930px) {
+        /* Estilo resmopsives para la primera seccion */    
+        .detail1 {
+            width: 160px;
+            position: absolute;
+            top: 70px;
+            left: 65%;   
+        }
+    
+        .detail2 {
+            width: 160px;
+            position: absolute;
+            top: 270px;
+            left: 65%;   
+        }
+    
+        .detail3 {
+            width: 160px;
+            position: absolute;
+            top: 270px;
+            left: 27%;   
+        }
+        
+        .home-section {
+            height: 800px;
+        }
     }
 
-    @media (max-width: 1200px) {    
+
+    @media (max-width: 1440px) { 
+        .detail1 {
+            width: 160px;
+            top: 70px;
+            left: 67%;   
+        }
+    
+        .detail2 {
+            width: 160px;
+            top: 270px;
+            left: 67%;   
+        }
+    
+        .detail3 {
+            width: 160px;
+            top: 270px;
+            left: 20%;   
+        }
+
+        .home-section {
+            height: 800px;
+        }
+    }
+
+    @media (max-width: 1200px) {  
+        /* Estilo resmopsives para la primera seccion */     
         .detail1 {
             width: 160px;
             position: absolute;
@@ -234,13 +323,18 @@ p{
             width: 160px;
             position: absolute;
             top: 270px;
-            left: 15%;   
-        } 
+            left: 10%;   
+        }
+        
+        .home-section {
+            height: 750px;
+        }
     }
 
 
 
 @media (max-width: 992px) {
+    /* Estilo resmopsives para la primera seccion */   
     .navbar ul{
         padding-inline-start: 0px;
     }
@@ -269,10 +363,15 @@ p{
         position: absolute;
         top: 270px;
         left: 8%;   
-    }    
+    }
+    
+    .home-section {
+        height: 730px;
+    }
 }
 
 @media (max-width: 768px) {
+    /* Estilo resmopsives para la primera seccion */   
     .navbar ul{
         padding-inline-start: 0px;
     }
@@ -301,10 +400,15 @@ p{
         position: absolute;
         top: 230px;
         left: 8%;   
-    }    
+    }
+    
+    .home-section {
+        height: 650px;
+    }
 }
 
 @media (max-width: 576px) {
+    /* Estilo resmopsives para la primera seccion */   
     .navbar ul{
         padding-inline-start: 0px;
     }
@@ -337,6 +441,7 @@ p{
 }
 
 @media (max-width: 450px) {
+    /* Estilo resmopsives para la primera seccion */   
     .navbar ul{
         padding-inline-start: 0px;
     }
