@@ -347,23 +347,23 @@ p{
     }
 
     .detail1 {
-        width: 120px;
+        width: 100px;
         position: absolute;
-        top: 30px;
+        top: 0px;
         left: 70%;   
     }
 
     .detail2 {
-        width: 120px;
+        width: 100px;
         position: absolute;
-        top: 180px;
+        top: 120px;
         left: 70%;   
     }
 
     .detail3 {
-        width: 120px;
+        width: 100px;
         position: absolute;
-        top: 180px;
+        top: 120px;
         left: 8%;   
     }    
 }
