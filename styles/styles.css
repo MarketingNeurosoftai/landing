@@ -10,7 +10,7 @@ h1{
 
 h6{
     color: #D3D3D3;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h4{
@@ -62,11 +62,15 @@ p{
     --bs-btn-hover-bg: #EED21B;
     --bs-btn-hover-color:#1A1A1A;
     --bs-btn-hover-border-color:#EED21B;
+    margin:10px 5px;
 }
 
 .btn-outline-light {
     --bs-btn-font-weight: 500;
+    margin: 10px 5px;
+    --bs-btn-hover-bg: #b9b9b9;
 }
+
 
 
 .btn-sm {
@@ -150,11 +154,89 @@ p{
     background-color: #292929;
   }
 
+    /* Estilos iconos */
+    .icon-watch{
+        color: #ffffff;
+    }
+
+    
+    .icon-watch:hover{
+        color: #282828;
+    }
+
+    .gold{
+        background: linear-gradient(45deg, #B9A101, #B9A100); /* Cambia los colores según tus preferencias */
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .contenedor {
+        position: relative;
+    }
+
+    .portada{
+        position: absolute;
+        animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s; /* don't forget to set a duration! */
+        width:900px;
+    }
+
+    .detail1 {
+        width: 160px;
+        position: absolute;
+        top: 70px;
+        left: 67%;   
+    }
+
+    .detail2 {
+        width: 160px;
+        position: absolute;
+        top: 270px;
+        left: 67%;   
+    }
+
+    .detail3 {
+        width: 160px;
+        position: absolute;
+        top: 270px;
+        left: 20%;   
+    }
+
+    .home-section {
+        background-image: url(../img/privacy_policy.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom:10px;
+        padding-top: 30px;
+    }
 
 
+    @media (max-width: 1440px) { 
+    }
 
-
-
+    @media (max-width: 1200px) {    
+        .detail1 {
+            width: 160px;
+            position: absolute;
+            top: 70px;
+            left: 73%;   
+        }
+    
+        .detail2 {
+            width: 160px;
+            position: absolute;
+            top: 270px;
+            left: 73%;   
+        }
+    
+        .detail3 {
+            width: 160px;
+            position: absolute;
+            top: 270px;
+            left: 15%;   
+        } 
+    }
 
 
 
@@ -166,5 +248,124 @@ p{
     .navbar li{
         padding-inline-start: 0px;
         font-size: 14px;
-    }   
+    }
+
+    .detail1 {
+        width: 160px;
+        position: absolute;
+        top: 70px;
+        left: 77%;   
+    }
+
+    .detail2 {
+        width: 160px;
+        position: absolute;
+        top: 270px;
+        left: 77%;   
+    }
+
+    .detail3 {
+        width: 160px;
+        position: absolute;
+        top: 270px;
+        left: 8%;   
+    }    
 }
+
+@media (max-width: 768px) {
+    .navbar ul{
+        padding-inline-start: 0px;
+    }
+    
+    .navbar li{
+        padding-inline-start: 0px;
+        font-size: 14px;
+    }
+
+    .detail1 {
+        width: 140px;
+        position: absolute;
+        top: 50px;
+        left: 70%;   
+    }
+
+    .detail2 {
+        width: 140px;
+        position: absolute;
+        top: 230px;
+        left: 70%;   
+    }
+
+    .detail3 {
+        width: 140px;
+        position: absolute;
+        top: 230px;
+        left: 8%;   
+    }    
+}
+
+@media (max-width: 576px) {
+    .navbar ul{
+        padding-inline-start: 0px;
+    }
+    
+    .navbar li{
+        padding-inline-start: 0px;
+        font-size: 14px;
+    }
+
+    .detail1 {
+        width: 120px;
+        position: absolute;
+        top: 30px;
+        left: 70%;   
+    }
+
+    .detail2 {
+        width: 120px;
+        position: absolute;
+        top: 180px;
+        left: 70%;   
+    }
+
+    .detail3 {
+        width: 120px;
+        position: absolute;
+        top: 180px;
+        left: 8%;   
+    }    
+}
+
+@media (max-width: 450px) {
+    .navbar ul{
+        padding-inline-start: 0px;
+    }
+    
+    .navbar li{
+        padding-inline-start: 0px;
+        font-size: 14px;
+    }
+
+    .detail1 {
+        width: 120px;
+        position: absolute;
+        top: 30px;
+        left: 70%;   
+    }
+
+    .detail2 {
+        width: 120px;
+        position: absolute;
+        top: 180px;
+        left: 70%;   
+    }
+
+    .detail3 {
+        width: 120px;
+        position: absolute;
+        top: 180px;
+        left: 8%;   
+    }    
+}
+
+
