@@ -218,37 +218,70 @@ p{
         padding-top: 30px;
     }
 
-    /* Estilo para la seccion de servicios */
-
-    .carousel-container {
-        display: flex;
-        width: 150%; /* Ancho total de todos los slides */
-        animation: slide 30s infinite linear; /* Ajusta la duración según tus necesidades */
-        margin-top: 20px;
-      }
-      
-      .carousel-slide {
-        flex: 1;
-        margin-right: 30px;
-      }
-      
-      .img-carousel {
-        width: 100%;
-        height: auto;
-        
-      }
-      
-      @keyframes slide {
-        0%, 100% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(-30%);
-        }
-      }
-
-
-
+/* Estilo para la seccion de servicios */
+/* Estilos carousel */
+  .slider2 {
+    background:none;
+    /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);  */
+    height: 152px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  
+  .slider2::before,
+  .slider2::after {
+    background: linear-gradient(to right, #1A1A1A 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 152px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  
+  .slider2::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  
+  .slider2::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .slider2 .slide-track2 {
+    -webkit-animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: fit-content;
+  }
+  
+  .slider2 .slide2 {
+    height: 152px;
+    width: 250px;
+    display: flex;
+  }
+  
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* scroll only 50% */
+      transform: translateX(-50%);
+    }
+  }
 
     @media (max-width: 1930px) {
         /* Estilo resmopsives para la primera seccion */    
@@ -277,6 +310,39 @@ p{
             height: 800px;
         }
     }
+
+.value {
+    margin: 50px 0px;
+    padding: 30px 0px;
+    background-color:#383941;
+}
+
+.value ul{
+    list-style-type: none;
+}
+
+.value li{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     @media (max-width: 1440px) { 
