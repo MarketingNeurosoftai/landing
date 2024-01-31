@@ -70,10 +70,33 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.send();
 });
 
-// pasar imagenes
+// pasar imagenes1
 document.addEventListener('DOMContentLoaded', function () {
     var imageContainer = document.querySelector('.image-container');
     var images = document.querySelectorAll('.image-container img');
+    var currentIndex = 0;
+
+    setInterval(function () {
+        // Establece la clase fadeIn a la imagen actual y fadeOut a las demás
+        images.forEach(function (image, index) {
+            if (index === currentIndex) {
+                image.classList.add('animate__fadeIn');
+                image.classList.remove('animate__fadeOut');
+            } else {
+                image.classList.remove('animate__fadeIn');
+                image.classList.add('animate__fadeOut');
+            }
+        });
+
+        // Incrementa el índice actual y vuelve a 0 si es mayor que el número de imágenes
+        currentIndex = (currentIndex + 1) % images.length;
+    }, 3000);  // Cambia cada 3 segundos (ajusta el tiempo según tus necesidades)
+});
+
+// pasar imagenes2
+document.addEventListener('DOMContentLoaded', function () {
+    var imageContainer = document.querySelector('.image-container2');
+    var images = document.querySelectorAll('.image-container2 img');
     var currentIndex = 0;
 
     setInterval(function () {
