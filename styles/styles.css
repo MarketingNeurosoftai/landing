@@ -576,6 +576,11 @@ p{
         left: 8%;   
     }
     
+    .image-container2 {
+        width: 315px; /* Ajusta el ancho según tus necesidades */
+        height: 432px; /* Ajusta la altura según tus necesidades */
+        margin: auto;
+    }
 }
 
 
