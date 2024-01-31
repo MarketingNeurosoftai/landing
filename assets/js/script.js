@@ -70,6 +70,61 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.send();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Cargar el contenido del feature.html en la sección con id "feature"
+    var featureContainer = document.getElementById('feature');
+    var xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                featureContainer.innerHTML = xhr.responseText;
+            } else {
+                console.error('Error al cargar el feature: ' + xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', 'assets/partials/feature.html', true);
+    xhr.send();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Cargar el contenido del fmedia.html en la sección con id "media"
+    var mediaContainer = document.getElementById('media');
+    var xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                mediaContainer.innerHTML = xhr.responseText;
+            } else {
+                console.error('Error al cargar el media: ' + xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', 'assets/partials/media.html', true);
+    xhr.send();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Cargar el contenido del timeline.html en la sección con id "timeline"
+    var timelineContainer = document.getElementById('timeline');
+    var xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                timelineContainer.innerHTML = xhr.responseText;
+            } else {
+                console.error('Error al cargar el timeline ' + xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', 'assets/partials/timeline.html', true);
+    xhr.send();
+});
+
+
 // pasar imagenes1
 document.addEventListener('DOMContentLoaded', function () {
     var imageContainer = document.querySelector('.image-container');
@@ -116,3 +171,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);  // Cambia cada 3 segundos (ajusta el tiempo según tus necesidades)
 });
 
+
+$(document).ready(function(){
+    $('.timeline-slider').slick({
+        infinite: false,
+        slidesToShow: 3, /* Muestra 3 eventos a la vez, ajusta según tus necesidades */
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});

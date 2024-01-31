@@ -77,6 +77,13 @@ p{
     --bs-btn-hover-bg: #b9b9b9;
 }
 
+.btn-info {
+    background-color:#EED21B;
+    font-weight: 600;
+    border: #B9A101 1px solid;
+    line-height: 1.2;
+}
+
 
 
 .btn-sm {
@@ -282,6 +289,13 @@ p{
       transform: translateX(-50%);
     }
   }
+
+/* Estilos media section */
+.containerbtn {
+    background-color: #1A1A1A;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
 
     @media (max-width: 1930px) {
         /* Estilo resmopsives para la primera seccion */    
@@ -584,3 +598,55 @@ p{
 }
 
 
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+
+/* Timeline styles */
+.timeline-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.timeline-item {
+    flex: 0 0 auto;
+    width: 300px; /* Ajusta según tus necesidades */
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    scroll-snap-align: start;
+}
