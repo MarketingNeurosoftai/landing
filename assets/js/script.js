@@ -1,36 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Cargar el contenido del footer.html en la sección con id "footer"
-    var footerContainer = document.getElementById('footer');
-    var xhr = new XMLHttpRequest();
-    
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                footerContainer.innerHTML = xhr.responseText;
-            } else {
-                console.error('Error al cargar el footer: ' + xhr.status);
-            }
-        }
-    };
-    xhr.open('GET', 'assets/partials/footer.html', true);
-    xhr.send();
-});
-
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
     // Cargar el contenido del navbar.html en la sección con id "navbar"
-    var navbarContainer = document.getElementById('navbar');
+    var navbarContainer = document.getElementById("navbar");
     var xhr = new XMLHttpRequest();
-    
+  
     xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                navbarContainer.innerHTML = xhr.responseText;
-            } else {
-                console.error('Error al cargar el navbar: ' + xhr.status);
-            }
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          navbarContainer.innerHTML = xhr.responseText;
+        } else {
+          console.error("Error al cargar el navbar: " + xhr.status);
         }
+      }
     };
-    xhr.open('GET', 'assets/partials/navbar.html', true);
+    xhr.open("GET", "assets/partials/navbar.html", true);
     xhr.send();
 });
 
@@ -53,6 +35,68 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Cargar el contenido del footer.html en la sección con id "footer"
+    var footerContainer = document.getElementById('footer');
+    var xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                footerContainer.innerHTML = xhr.responseText;
+            } else {
+                console.error('Error al cargar el footer: ' + xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', 'assets/partials/footer.html', true);
+    xhr.send();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var imageContainer = document.querySelector('.image-container');
+    var images = document.querySelectorAll('.image-container img');
+    var currentIndex = 0;
+
+    setInterval(function () {
+        // Establece la clase fadeIn a la imagen actual y fadeOut a las demás
+        images.forEach(function (image, index) {
+            if (index === currentIndex) {
+                image.classList.add('animate__fadeIn');
+                image.classList.remove('animate__fadeOut');
+            } else {
+                image.classList.remove('animate__fadeIn');
+                image.classList.add('animate__fadeOut');
+            }
+        });
+
+        // Incrementa el índice actual y vuelve a 0 si es mayor que el número de imágenes
+        currentIndex = (currentIndex + 1) % images.length;
+    }, 3000);  // Cambia cada 3 segundos (ajusta el tiempo según tus necesidades)
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var imageContainer = document.querySelector('.image-container2');
+    var images = document.querySelectorAll('.image-container2 img');
+    var currentIndex = 0;
+
+    setInterval(function () {
+        // Establece la clase fadeIn a la imagen actual y fadeOut a las demás
+        images.forEach(function (image, index) {
+            if (index === currentIndex) {
+                image.classList.add('animate__fadeIn');
+                image.classList.remove('animate__fadeOut');
+            } else {
+                image.classList.remove('animate__fadeIn');
+                image.classList.add('animate__fadeOut');
+            }
+        });
+
+        // Incrementa el índice actual y vuelve a 0 si es mayor que el número de imágenes
+        currentIndex = (currentIndex + 1) % images.length;
+    }, 3000);  // Cambia cada 3 segundos (ajusta el tiempo según tus necesidades)
+});
+
+document.addEventListener('DOMContentLoaded', function () {
     // Cargar el contenido del cta-section.html en la sección con id "value"
     var valueContainer = document.getElementById('value');
     var xhr = new XMLHttpRequest();
@@ -67,24 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
     xhr.open('GET', 'assets/partials/value.html', true);
-    xhr.send();
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Cargar el contenido del feature.html en la sección con id "feature"
-    var featureContainer = document.getElementById('feature');
-    var xhr = new XMLHttpRequest();
-    
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                featureContainer.innerHTML = xhr.responseText;
-            } else {
-                console.error('Error al cargar el feature: ' + xhr.status);
-            }
-        }
-    };
-    xhr.open('GET', 'assets/partials/feature.html', true);
     xhr.send();
 });
 
@@ -124,67 +150,3 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.send();
 });
 
-
-// pasar imagenes1
-document.addEventListener('DOMContentLoaded', function () {
-    var imageContainer = document.querySelector('.image-container');
-    var images = document.querySelectorAll('.image-container img');
-    var currentIndex = 0;
-
-    setInterval(function () {
-        // Establece la clase fadeIn a la imagen actual y fadeOut a las demás
-        images.forEach(function (image, index) {
-            if (index === currentIndex) {
-                image.classList.add('animate__fadeIn');
-                image.classList.remove('animate__fadeOut');
-            } else {
-                image.classList.remove('animate__fadeIn');
-                image.classList.add('animate__fadeOut');
-            }
-        });
-
-        // Incrementa el índice actual y vuelve a 0 si es mayor que el número de imágenes
-        currentIndex = (currentIndex + 1) % images.length;
-    }, 3000);  // Cambia cada 3 segundos (ajusta el tiempo según tus necesidades)
-});
-
-// pasar imagenes2
-document.addEventListener('DOMContentLoaded', function () {
-    var imageContainer = document.querySelector('.image-container2');
-    var images = document.querySelectorAll('.image-container2 img');
-    var currentIndex = 0;
-
-    setInterval(function () {
-        // Establece la clase fadeIn a la imagen actual y fadeOut a las demás
-        images.forEach(function (image, index) {
-            if (index === currentIndex) {
-                image.classList.add('animate__fadeIn');
-                image.classList.remove('animate__fadeOut');
-            } else {
-                image.classList.remove('animate__fadeIn');
-                image.classList.add('animate__fadeOut');
-            }
-        });
-
-        // Incrementa el índice actual y vuelve a 0 si es mayor que el número de imágenes
-        currentIndex = (currentIndex + 1) % images.length;
-    }, 3000);  // Cambia cada 3 segundos (ajusta el tiempo según tus necesidades)
-});
-
-
-$(document).ready(function(){
-    $('.timeline-slider').slick({
-        infinite: false,
-        slidesToShow: 3, /* Muestra 3 eventos a la vez, ajusta según tus necesidades */
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-});
