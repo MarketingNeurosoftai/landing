@@ -199,7 +199,8 @@ p{
         width: 160px;
         position: absolute;
         top: 400px;
-        left: 67%;   
+        left: 67%;
+        z-index: 999;    
     }
 
     .detail2 {
@@ -343,7 +344,7 @@ p{
 .timeline-slider {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
 }
 
 .timeline-item {
@@ -383,20 +384,20 @@ p{
 
 
 
-
     @media (max-width: 1930px) {
         /* Estilo resmopsives para la primera seccion */    
         .detail1 {
             width: 160px;
             position: absolute;
             top: 400px;
-            left: 63%;   
+            left: 63%;
+              
         }
     
         .detail2 {
             width: 160px;
             position: absolute;
-            top: 600px;
+            top: 580px;
             left: 63%;   
         }
     
@@ -421,7 +422,7 @@ p{
     
         .detail2 {
             width: 160px;
-            top: 600px;
+            top: 580px;
             left: 67%;   
         }
     
@@ -465,7 +466,7 @@ p{
         .detail2 {
             width: 160px;
             position: absolute;
-            top: 600px;
+            top: 580px;
             left: 73%;   
         }
     
@@ -508,7 +509,7 @@ p{
     .detail2 {
         width: 160px;
         position: absolute;
-        top: 600px;
+        top: 580px;
         left: 77%;   
     }
 
@@ -545,7 +546,7 @@ p{
     .detail2 {
         width: 140px;
         position: absolute;
-        top: 530px;
+        top: 510px;
         left: 70%;   
     }
 
@@ -579,23 +580,23 @@ p{
     }
 
     .detail1 {
-        width: 120px;
+        width: 110px;
         position: absolute;
-        top: 300px;
+        top: 450px;
         left: 70%;   
     }
 
     .detail2 {
-        width: 120px;
+        width: 110px;
         position: absolute;
-        top: 450px;
+        top: 590px;
         left: 70%;   
     }
 
     .detail3 {
-        width: 120px;
+        width: 110px;
         position: absolute;
-        top: 450px;
+        top: 590px;
         left: 8%;   
     }
     
@@ -641,21 +642,21 @@ p{
     .detail1 {
         width: 100px;
         position: absolute;
-        top: 350px;
+        top: 465px;
         left: 70%;   
     }
 
     .detail2 {
         width: 100px;
         position: absolute;
-        top: 500px;
+        top: 580px;
         left: 70%;   
     }
 
     .detail3 {
         width: 100px;
         position: absolute;
-        top: 500px;
+        top: 580px;
         left: 8%;   
     }
     

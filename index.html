@@ -117,5 +117,21 @@
     
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/67b64d2670.js" crossorigin="anonymous"></script>
+    <script>
+      function mostrarInfo(id) {
+        // Oculta todos los divs
+        var divs = document.querySelectorAll('.info-container');
+        divs.forEach(function(div) {
+          div.style.display = 'none';
+        });
+
+        // Muestra el div específico
+        var divMostrar = document.getElementById(id);
+        if (divMostrar) {
+          divMostrar.style.display = 'block';
+        }
+      }
+    </script>
 </body>
+
 </html>
