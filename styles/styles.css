@@ -29,6 +29,32 @@ p{
     font-weight: 300;
 }
 
+/* Estilos Scrollbar */
+/* Estilo para la barra de desplazamiento vertical */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #EED21B; /* Color del thumb (agarre) */
+    border-radius: 5px; /* Bordes redondeados del thumb */
+  }
+
+  /* Estilo para la barra de desplazamiento horizontal */
+  ::-webkit-scrollbar-horizontal {
+    height: 5px;
+  }
+
+
+  /* Estilo para la pista (track) de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background-color: #000000; /* Color de la pista */
+    border-radius: 5px;
+    
+  }
+
+
+
 .legal {
     background-color: #292929;
     border-radius: 10px;

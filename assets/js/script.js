@@ -150,3 +150,21 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.send();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Cargar el contenido del timeline.html en la sección con id "reports"
+    var reportsContainer = document.getElementById('reports');
+    var xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                reportsContainer.innerHTML = xhr.responseText;
+            } else {
+                console.error('Error al cargar el reports' + xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', 'assets/partials/reports.html', true);
+    xhr.send();
+});
+
