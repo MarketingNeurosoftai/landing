@@ -13,6 +13,11 @@ h6{
     font-weight: 300;
 }
 
+h5{
+    color: #ffffff;
+    font-weight: 300;
+}
+
 h4{
     color: #EED21B;
     font-weight: 400;
@@ -415,6 +420,22 @@ p{
     margin-top: 50px;
 }
 
+.forms {
+    background-color:#202020;
+    padding: 30px;
+    border: 3px solid #363636;
+    border-radius: 10px;
+}
+
+.forms input{
+    background-color:#292929;
+    border: 1px solid #717171;
+    margin: 15px auto;
+}
+
+.forms input::placeholder {
+    color: #9E9E9E; /* Cambia el color según tus preferencias */
+}
 
 
 

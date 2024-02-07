@@ -186,3 +186,22 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.send();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Cargar el contenido del contact-us.html en la sección con id "contact"
+    var contactContainer = document.getElementById('contact');
+    var xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                contactContainer.innerHTML = xhr.responseText;
+            } else {
+                console.error('Error al cargar el contact' + xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', 'assets/partials/contac-us.html', true);
+    xhr.send();
+});
+
+
