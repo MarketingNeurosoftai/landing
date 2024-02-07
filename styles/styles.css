@@ -408,6 +408,15 @@ p{
     font-weight: 700;
 }
 
+.banner {
+    background: linear-gradient(to right, #BC9C22, #3d3707);
+    border-radius: 20px;
+    padding: 30px 0px;
+    margin-top: 50px;
+}
+
+
+
 
 
     @media (max-width: 1930px) {

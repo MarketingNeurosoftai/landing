@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Cargar el contenido del timeline.html en la sección con id "reports"
+    // Cargar el contenido del reports.html en la sección con id "reports"
     var reportsContainer = document.getElementById('reports');
     var xhr = new XMLHttpRequest();
     
@@ -165,6 +165,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
     xhr.open('GET', 'assets/partials/reports.html', true);
+    xhr.send();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Cargar el contenido del banner.html en la sección con id "banner"
+    var bannerContainer = document.getElementById('banner');
+    var xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                bannerContainer.innerHTML = xhr.responseText;
+            } else {
+                console.error('Error al cargar el banner' + xhr.status);
+            }
+        }
+    };
+    xhr.open('GET', 'assets/partials/banner.html', true);
     xhr.send();
 });
 
