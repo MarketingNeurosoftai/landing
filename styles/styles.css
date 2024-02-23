@@ -1,3 +1,4 @@
+
 /* Estilos globales */
 body {
     background:#1A1A1A;
@@ -722,4 +723,15 @@ p{
         margin: auto;
     }
 }
+
+.modal-content{
+    --bs-modal-bg: #353434
+}
+
+.btn-close {
+    color: #ffdd03;
+    background-color: #a6b503;
+    border: 1px solid #d9c700;
+}
+
 
